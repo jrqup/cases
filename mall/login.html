@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>登录</title>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+<div class="cotn_principal">
+    <div class="cont_centrar">
+        <div class="cont_login">
+            <div class="cont_info_log_sign_up">
+                <div class="col_md_login">
+                    <div class="cont_ba_opcitiy">
+                        <h2>登录</h2>
+                        <p>欢迎登录</p>
+                        <button class="btn_login" onClick="cambiar_login()">登录</button>
+                    </div>
+                </div>
+                <div class="col_md_sign_up">
+                    <div class="cont_ba_opcitiy">
+                        <h2>注册</h2>
+                        <p>欢迎注册</p>
+                        <button class="btn_sign_up" onClick="cambiar_sign_up()">注册</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cont_back_info">
+                <div class="cont_img_back_grey"> <img src="img/login/log1.jpg" alt="" /> </div>
+            </div>
+            <div class="cont_forms" >
+                <div class="cont_img_back_"> <img src="img/login/log1.jpg" alt="" /> </div>
+                <div class="cont_form_login"> <a href="#" onClick="ocultar_login_sign_up()">X</a>
+                    <h2>登录</h2>
+                    <input id="txtName" type="text" placeholder="用户名" />
+                    <p class="actived" id="msgUserd"></p>
+                    <input id="txtPwd" type="password" placeholder="密码" />
+                    <p class="actived" id="msgUpwdd"></p>
+                    <button class="btn_login btn">登录</button>
+                </div>
+                <div class="cont_form_sign_up">
+                    <a href="#" onClick="ocultar_login_sign_up()">X</a>
+                    <h2>注册</h2>
+                    <input id="userName" type="text" placeholder="用户名" />
+                    <p class="actived" id="msgUser"></p>
+                    <input id="upwd" type="password" placeholder="密码" />
+                    <p class="actived" id="msgUpwd"></p>
+                    <input id="cpwd" type="password" placeholder="确认密码" />
+                    <p class="actived" id="msgCpwd"></p>
+                    <button class="btn_sign_up btn">注册</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+/******商品列表样式*********/
+#header,#footer,.container{
+    width: 1190px;
+    margin: 0 auto;
+}
+.selector {
+    height: 366px;
+    border-top: 1px solid #DDD;
+    background: #69fff8;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.product_list .m-list .filter{
+    position: relative;
+    border-top: 1px solid #DDD;
+    margin-bottom: 5px;
+}
+.filter .f-line {
+    padding: 6px 8px;
+    border-bottom: 1px solid #E7E3E7;
+    background: #F9F9F9;
+    zoom: 1;
+}
+.product_list .m-list .filter .f-line.top{
+    height: 25px;
+    background: #F1F1F1;
+}
+.product_list .m-list .filter .f-sort {
+    float: left;
+    margin-right: 24px;
+}
+.product_list .m-list .filter .f-pager {
+    float: right;
+}
+.product_list .m-list .filter .f-sort>a.curr {
+    background: #e4393c;
+    color: #FFF;
+    border-color: #e4393c;
+}
+.product_list .m-list .filter .f-sort a {
+    float: left;
+    padding: 0 10px;
+    height: 23px;
+    border: 1px solid #CCC;
+    line-height: 23px;
+    margin-right: -1px;
+    background: #FFF;
+    color: #333;
+}
+.product_list .m-list .filter .f-pager .text b {
+    color: #e4393c;
+    font-weight: 700;
+}
+.filter .f-pager .fp-prev {
+    margin-left: 3px;
+}
+.filter .f-pager .fp-prev,.filter .f-pager .fp-next{
+    width: 23px;
+    height: 23px;
+    border: 1px solid #DDD;
+    display: inline-block;
+    background: #FFF;
+    line-height: 23px;
+    text-align: center;
+    font-size: 16px;
+    color: #AAA;
+}
+.filter .f-store .cell,.filter .addr-curr {
+    float: left;
+    padding-left: 5px;
+}
+.filter .addr-curr {
+    height: 23px;
+    line-height: 23px;
+    padding: 0 5px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    background: #fff;
+    cursor: pointer;
+    color: #333;
+}
+.filter .f-feature {
+    position: relative;
+    width: auto;
+    height: 25px;
+    overflow: hidden;
+}
+.filter .f-feature ul li {
+    float: left;
+    display: inline;
+    height: 25px;
+    line-height: 25px;
+}
+.filter .f-feature ul li a{
+    position: relative;
+    display: inline-block;
+    padding-left: 2px;
+    padding-right: 10px;
+    color: #333;
+}
+.filter .f-feature ul li a:hover{
+    color: #e4393c;
+}
+/*****图片列表*******/
+.pic_list .product{
+    position: relative;
+    float: left;
+    width: 220px;height: 353px;
+    margin: 8px;
+    line-height: 1.5;
+    overflow: visible;
+    z-index: 1;
+}
+.pic_list .product .product_item{
+    height: 353px;width: 210px;
+    position: absolute;
+    background-color: #fff;
+    margin: 0 5px;
+    padding: 4px 4px 0;
+    border: 1px solid #f5f5f5;
+    border-radius: 3px;
+}
+.pic_list .product .product_item:hover{
+    border: 1px solid #E9E9E9;
+}
+.pic_list .product .product_item .productImg{
+    display: table;
+    table-layout: fixed;
+    height: 210px;
+    width: 100%;
+    margin: 0 0 5px;
+}
+.pic_list .product .product_item .productImg a>img{
+    width: 210px;height: 210px;
+    transition: transform 0.5s linear;
+}
+.pic_list .product .product_item .productImg a>img:hover{
+    transform: scale(1.02);
+}
+.pic_list .product .product_item .productPrice{
+    color: #ff0036;
+    height: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 0 5px;
+    letter-spacing: normal;
+    white-space: nowrap;
+}
+.pic_list .product .product_item .productPrice b{
+    margin-right: 2px;
+    font-weight: 700;
+    font-size: 14px;
+}
+.pic_list .product .product_item .productTitle{
+    margin-left: 4px;
+    width: 206px;height: 36px;
+    overflow: hidden;
+}
+.pic_list .product .product_item .productTitle a{
+    color: #333;
+}
+.pic_list .product .product_item .productTitle a:hover{
+    color: #ff0036;
+}
+.pic_list .product .product_item .productTitle .prop{
+    color: #568396;
+    line-height: 12px;
+    max-width: 4em;
+    overflow: hidden;
+    word-break: break-word;
+}
+.pic_list .product .product_item .productShop{
+    height: 22px;
+    margin: 5px 4px;
+}
+.pic_list .product .product_item .productShop>a{
+    line-height: 20px;
+    height: 20px;
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.pic_list .product .product_item .productCart>a{
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #DDD;
+    text-align: center;
+    position: relative;
+    background: #fff;
+    color: #999;
+}
+.pic_list .product .product_item .productCart>a:hover{border: 1px solid #e4393c;}
+.pic_list .product .product_item .productCart i{
+    position: absolute;
+    display: block;
+    font-style: normal;
+    left: 4px;
+    top: 3px;
+    width: 18px;
+    height: 18px;
+    background: url("../img/shortcut/gwc.png");
+}
+.pic_list .product .product_item .productCart .addCart{
+    width: 67px;
+    text-align: center;
+    color: #e4393c;
+    padding-left: 22px;
+    margin-left: 5px;
+}
+.pic_list .product .product_item .productCart>input{
+    text-align: center;
+    width: 20px;
+}
+.pic_list .product .product_item .productCart .reduce,.pic_list .product .product_item .productCart .add{
+    width: 25px;
+}
+.pic_list .product .product_item .productCart .addcart{
+    width: 96px;
+}
+/*****页码*******/
+.page{
+    margin-top: 30px;
+    height: 50px;
+}
+.page .page_list{
+    float: right;
+}
+.page .page_list .page_num>a{
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 14px;
+    margin-right: 5px;
+    font-size: 14px;
+    color: #333;
+    border: 1px solid #ddd;
+}
+.page .page_list .page_num>a.active{
+    border: 1px solid #ff0036;
+}
+.page .p-skip {
+    float: left;
+    margin-left: 20px;
+}
+.page .p-skip em {
+    line-height: 38px;
+    font-size: 14px;
+}
+.page .page_list .page_skip>input{
+    width: 30px;
+    height: 30px;
+    margin: 0 3px;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: center;
+}
+.page .page_list .page_skip>a{
+    display: inline-block;
+    height: 27px;
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 27px;
+    border: 1px solid #DDD;
+    padding: 4px 13px 5px;
+    color: #666;
+    text-align: center;
+}

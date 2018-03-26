@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情页</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/product-details.css">
+</head>
+<body>
+    <header id="header">
+        <img src="img/loading.gif" alt="加载中..." >
+    </header>
+    <div class="container">
+        <div id="product-details">
+            <div id="preview">
+                <div id="mediumDiv">
+                    <img id="mImg" src="img/product/md/584b5678Nbc9f1e70.jpg">
+                    <div id="mask"></div>
+                    <div id="superMask"></div>
+                </div>
+                <div id="largeDiv"></div>
+                <h1>
+                    <a class="backward disabled"></a>
+                    <a class="forward"></a>
+                    <ul id="icon_list">
+                        <img src="img/loading.gif" alt="加载中..." >
+                        <!--<li class="i1"><img src="${pic.sm}" data-md="${pic.md}" data-lg="${pic.lg}"></li>-->
+                    </ul>
+                </h1>
+            </div>
+            <!--3.2 右上 ：文字信息 #show-details width:490px-->
+            <div id="show-details">
+                <h1>${p.title}</h1>
+                <h3>
+                    <a href="javascript:;">${p.subtitle}</a>
+                </h3>
+                <div class="price">
+                    <div class="stu-price">
+                        <b>商品售价：</b>
+                        <span class="tm-price">¥${p.price}</span>
+                    </div>
+                    <div class="promise">
+                        服务承诺：<b>${p.promise}</b>
+                    </div>
+                </div>
+                <!-- 客服 -->
+                <p class="parameter">
+                    <b>客服：</b>
+                    <span>联系客服</span>
+                    <img src="img/product_detail/kefuf.gif">
+                </p>
+                <!-- 规格 -->
+                <div class="spec clear">
+                    <p>规格：</p>
+                    <div>
+                        <a href="product_details.html?lid=${laptop.lid}" class=${ laptop.lid===details.lid?"active":"" }>${laptop.spec}</a>
+                    </div>
+                </div>
+                <!-- 数量 -->
+                <p class="account">
+                    <dt class="dt">数量：</dt>
+                    <span class="number-reduce">-</span>
+                    <input class="in" type="text" value="1">
+                    <span class="number-add">+</span>
+                    <span class="num">件</span>
+                    <span class="count">库存55件</span>
+                </p>
+                <!-- 分期-->
+                <p class="pay">
+                    <dt>分期:</dt>
+                    <span class="cc">该商品最高可享12期分期免息</span>
+                </p>
+                <ul class="list">
+                    <li>
+                        <a href="#" class="active">
+                            <span>
+                                <span>
+                                    <em>¥</em>
+                                    <strong>3333.00</strong>x3期
+                                </span>
+                            </span>
+                            <br/>
+                            <span>(0手续费)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                <span>
+                                    <em>¥</em>
+                                    <strong>3333.00</strong>x6期
+                                </span>
+                            </span>
+                            <br/>
+                            <span>(0手续费)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                <span>
+                                    <em>¥</em>
+                                    <strong>3333.00</strong>x12期
+                                </span>
+                            </span>
+                            <br/>
+                            <span>(0手续费)</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- 购买部分 -->
+                <span class="fn-clear"></span>
+                <div class="shops">
+                    <a href="javascript:;" class="buy">立即购买</a>
+                    <a href="javascript:;" class="cart">
+                        加入购物车
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span class="fn-clear"></span>
+    <div class="comb">
+        <div id="demo">
+            <div id="indemo">
+                <div id="demo1">
+                    <div class="list_wrap">
+                        <div class="wrap_item">
+                            <a href="#">
+                                <img src="img/index/ms1.jpg" alt="" title="德尔玛（Deerma）加湿器 5L大容量 恒湿感温 家用卧室静音迷你办公室香薰加湿 DEM-F500（升级版）" class="item_img"/>
+                                <p class="list_tit">LG 55LG63CJ-CA 55英寸超高清4K IPS硬屏主动式HDR 智能平板液晶电视机（黑色）</p>
+                            </a>
+                            <span class="shadow"></span>
+                            <p class="price">
+                        <span class="new_price">
+                            <i>¥</i>
+                            <span>3588.00</span>
+                        </span>
+                                    <span class="old_price">
+                            <i>¥</i>
+                            <del>5999.00</del>
+                        </span>
+                            </p>
+                        </div>
+                        <div class="wrap_item">
+                            <a href="#">
+                                <img src="img/index/ms2.jpg" alt="" class="item_img"/>
+                                <p class="list_tit">gb好孩子多功能婴儿推车A513-B-L148 蓝色</p>
+                            </a>
+                            <span class="shadow"></span>
+                            <p class="price">
+                        <span class="new_price">
+                            <i>¥</i>
+                            <span>458.00</span>
+                        </span>
+                                    <span class="old_price">
+                            <i>¥</i>
+                            <del>499.00</del>
+                        </span>
+                            </p>
+                        </div>
+                        <div class="wrap_item">
+                            <a href="#">
+                                <img src="img/index/ms3.jpg" alt="" class="item_img"/>
+                                <p class="list_tit">LG 55LG63CJ-CA 55英寸超高清4K IPS硬屏主动式HDR 智能平板液晶电视机（黑色）</p>
+                            </a>
+                            <span class="shadow"></span>
+                            <p class="price">
+                        <span class="new_price">
+                            <i>¥</i>
+                            <span>3588.00</span>
+                        </span>
+                                    <span class="old_price">
+                            <i>¥</i>
+                            <del>5999.00</del>
+                        </span>
+                            </p>
+                        </div>
+                        <div class="wrap_item">
+                            <a href="#">
+                                <img src="img/index/ms4.jpg" alt="" class="item_img"/>
+                                <p class="list_tit">德尔玛（Deerma）加湿器 5L大容量 恒湿感温 家用卧室静音迷你办公室香薰加湿 DEM-F500（升级版）</p>
+                            </a>
+                            <span class="shadow"></span>
+                            <p class="price">
+                        <span class="new_price">
+                            <i>¥</i>
+                            <span>129.00</span>
+                        </span>
+                                    <span class="old_price">
+                            <i>¥</i>
+                            <del>159.00</del>
+                        </span>
+                            </p>
+                        </div>
+                        <div class="wrap_item">
+                            <a href="#">
+                                <img src="img/index/ms5.jpg" alt="" class="item_img"/>
+                                <p class="list_tit">LG 55LG63CJ-CA 55英寸超高清4K IPS硬屏主动式HDR 智能平板液晶电视机（黑色）</p>
+                            </a>
+                            <span class="shadow"></span>
+                            <p class="price">
+                        <span class="new_price">
+                            <i>¥</i>
+                            <span>3588.00</span>
+                        </span>
+                                    <span class="old_price">
+                            <i>¥</i>
+                            <del>5999.00</del>
+                        </span>
+                            </p>
+                        </div>
+                        <div class="wrap_item">
+                            <a href="#">
+                                <img src="img/index/index_Sbanner_img1.png" alt="" title="德尔玛（Deerma）加湿器 5L大容量 恒湿感温 家用卧室静音迷你办公室香薰加湿 DEM-F500（升级版）" class="item_img"/>
+                                <p class="list_tit">LG 55LG63CJ-CA 55英寸超高清4K IPS硬屏主动式HDR 智能平板液晶电视机（黑色）</p>
+                            </a>
+                            <span class="shadow"></span>
+                            <p class="price">
+                        <span class="new_price">
+                            <i>¥</i>
+                            <span>3588.00</span>
+                        </span>
+                                    <span class="old_price">
+                            <i>¥</i>
+                            <del>5999.00</del>
+                        </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="demo2"></div>
+            </div>
+        </div>
+    </div>
+    <div class="bd">
+        <div class="col-sub">
+            <img src="img/product_detail/pd.jpg" alt=""/>
+        </div>
+        <div class="col-main">
+            <div class="main-wrap">
+                <div class="tabBarbox">
+                    <ul class="tabBar">
+                        <li class="tabindex selected"><a href="#content1">商品详情</a></li>
+                        <li class="tabindex"><a href="#content2">规格参数</a></li>
+                        <li class="tabindex"><a href="#content3">累计评价</a></li>
+                    </ul>
+                </div>
+                <div class="tabBar_info">
+                    <div id="content1" class="tabBar_det active">
+                        <div class="attr">
+                            <div class="attr-list">
+                                <div>
+                                    <span>品牌名称:</span>ThinkPad
+                                </div>
+                                <p>
+                                    <em>产品参数:</em>
+                                    <a href="">更多参数></a>
+                                </p>
+                                <ul>
+                                    <li>证书编号：2013010902649488</li>
+                                    <li>证书状态：有效</li>
+                                    <li>申请人名称：纬创资通股份有限公司</li>
+                                    <li>制造商名称：联想(北京)有限公司</li>
+                                    <li>产品名称：便携式计算机</li>
+                                    <li>3C产品型号：ThinkPad X1 Carbonxxxxxxxx（规定型号: TP00061A;TP00061B...</li>
+                                    <li>3C规格型号：ThinkPad X1 Carbonxxxxxxxx（规定型号: TP00061A;TP00061B...</li>
+                                    <li>产品名称：ThinkPad X1 Carbon 20HRA...</li>
+                                    <li>品牌: ThinkPad</li>
+                                    <li>X1 Carbon系列型号: 20HRA007CD</li>
+                                    <li>屏幕尺寸: 14英寸</li>
+                                    <li>CPU: 英特尔 酷睿 i5-7200U</li>
+                                    <li>显卡类型: 英特尔 HD 620显示芯片</li>
+                                    <li>显存容量: 共享系统内存</li>
+                                    <li>机械硬盘容量: 无机械硬盘</li>
+                                    <li>内存容量: 8GB</li>
+                                    <li>操作系统: windows 10</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flash">
+                            <div class="lib-video">
+                                <video id="video" src="img/product_detail/xq.mp4" class="lib-video" controls="false"></video>
+                                <div class="v-fix">
+                                   <button class="vjs-center-start"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pic-details">
+                            <div class="details_content">
+                                <div>
+                                    <img src="img/product_detail/xq1.jpg" alt=""/>
+                                </div>
+                                <div>
+                                    <img src="img/product_detail/xq4.jpg" alt=""/>
+                                    <img src="img/product_detail/xq5.jpg" alt=""/>
+                                    <img src="img/product_detail/xq6.jpg" alt=""/>
+                                    <img src="img/product_detail/xq7.jpg" alt=""/>
+                                    <img src="img/product_detail/xq8.jpg" alt=""/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="content2" class="tabBar_dec">
+                        <div class="dec_list">
+                            <table class="tm-attr" border="1">
+                                <thead>
+                                    <tr>
+                                        <td colspan="3">规格参数</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="tableAttr">
+                                        <th rowspan="5">其他属性</th>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>适用场景</th>
+                                        <td>家庭影音 轻薄便携 学生 商务办公 尊贵旗舰 家庭娱乐</td>
+                                    </tr>
+                                    <tr>
+                                        <th>售后服务</th>
+                                        <td>全国联保</td>
+                                    </tr>
+                                    <tr>
+                                        <th>通信技术类型</th>
+                                        <td>无线网卡 蓝牙</td>
+                                    </tr>
+                                    <tr>
+                                        <th>是否超极本</th>
+                                        <td>是</td>
+                                    </tr>
+                                    <tr class="tableAttr">
+                                        <th rowspan="5">存储</th>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>显存容量</th>
+                                        <td>共享系统内存</td>
+                                    </tr>
+                                    <tr>
+                                        <th>机械硬盘容量</th>
+                                        <td>无机械硬盘</td>
+                                    </tr>
+                                    <tr>
+                                        <th>固态硬盘</th>
+                                        <td>8GB</td>
+                                    </tr>
+                                    <tr>
+                                        <th>内存容量</th>
+                                        <td>是</td>
+                                    </tr>
+                                    <tr class="tableAttr">
+                                        <th rowspan="10">基本参数</th>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>厚度</th>
+                                        <td> 15.0mm(含)-18.0mm(不含)</td>
+                                    </tr>
+                                    <tr>
+                                        <th>品牌</th>
+                                        <td> ThinkPad</td>
+                                    </tr>
+                                    <tr>
+                                        <th>ThinkPad系列</th>
+                                        <td>X1 Carbon</td>
+                                    </tr>
+                                    <tr>
+                                        <th>CPU</th>
+                                        <td>英特尔 酷睿 i5-7200U</td>
+                                    </tr>
+                                    <tr>
+                                        <th>显卡类型</th>
+                                        <td>英特尔 HD 620显示芯片</td>
+                                    </tr>
+                                    <tr>
+                                        <th>光驱类型</th>
+                                        <td>无光驱</td>
+                                    </tr>
+                                    <tr>
+                                        <th>颜色分类</th>
+                                        <td>黑色</td>
+                                    </tr>
+                                    <tr>
+                                        <th>上市时间	</th>
+                                        <td>2017年</td>
+                                    </tr>
+                                    <tr>
+                                        <th>操作系统</th>
+                                        <td>windows 10</td>
+                                    </tr>
+                                    <tr class="tableAttr">
+                                        <th rowspan="7">显示</th>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>屏幕类型</th>
+                                        <td>FHD IPS LED背光显示屏</td>
+                                    </tr>
+                                    <tr>
+                                        <th>屏幕尺寸</th>
+                                        <td>14英寸</td>
+                                    </tr>
+                                    <tr>
+                                        <th>固态硬盘</th>
+                                        <td>8GB</td>
+                                    </tr>
+                                    <tr>
+                                        <th>屏幕比例</th>
+                                        <td>16:9</td>
+                                    </tr>
+                                    <tr>
+                                        <th>分辨率</th>
+                                        <td>1920x1080</td>
+                                    </tr>
+                                    <tr>
+                                        <th>是否触摸屏</th>
+                                        <td>非触摸屏</td>
+                                    </tr>
+                                    <tr class="tableAttr">
+                                        <th rowspan="5">包装清单</th>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>笔记本</th>
+                                        <td>1 件</td>
+                                    </tr>
+                                    <tr>
+                                        <th>电源线</th>
+                                        <td>1 件</td>
+                                    </tr>
+                                    <tr>
+                                        <th>电源适配器</th>
+                                        <td>1 件</td>
+                                    </tr>
+                                    <tr>
+                                        <th>保修卡</th>
+                                        <td>1 件</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="content3" class="tabBar_seem"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-extra"></div>
+    </div>
+    <span class="fn-clear"></span>
+    <footer id="footer">
+        <img src="img/loading.gif" alt="加载中..." >
+    </footer>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/product_details.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/pay_success.css">
+    <link rel="stylesheet" href="css/footer.css"/>
+</head>
+<body>
+<div id="header">
+    <div class="loading">
+        <img src="img/loading.gif" alt="加载中..." >
+    </div>
+</div>
+<div id="navlist">
+    <ul>
+        <li class="navlist_gray_left"></li>
+        <li class="navlist_gray">确认订单信息</li>
+        <li class="navlist_gray_arro"><canvas id="canvas_gray" width="20" height="38"></canvas>
+        </li>
+        <li class="navlist_gray">支付订单<b></b></li>
+        <li class="navlist_gray_right"></li>
+        <li class="navlist_blue">支付完成<b></b></li>
+        <li class="navlist_blue_arro"><canvas id="canvas_blue" width="20" height="38"></canvas>
+        </li>
+    </ul>
+</div>
+<div class="backToIndex"><a href="index.html">返回首页继续购物</a></div>
+<div class="fn-clear">
+</div>
+<footer id="footer">
+</footer>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+<script>
+    var canvas=document.getElementById("canvas_gray");
+    var cxt=canvas.getContext("2d");
+    var gray = cxt.createLinearGradient (10, 0, 10, 38);
+    gray.addColorStop(0, '#f5f4f5');
+    gray.addColorStop(1, '#e6e6e5');
+    cxt.beginPath();
+    cxt.fillStyle = gray;
+    cxt.moveTo(20,19);
+    cxt.lineTo(0,38);
+    cxt.lineTo(0,0);
+    cxt.fill();
+    cxt.closePath();
+</script>
+<script>
+    var canvas=document.getElementById("canvas_blue");
+    var cxt=canvas.getContext("2d");
+    var blue = cxt.createLinearGradient (10, 0, 10, 38);
+    blue.addColorStop(0, '#27b0f6');
+    blue.addColorStop(1, '#0aa1ed');
+    cxt.beginPath();
+    cxt.fillStyle = blue;
+    cxt.moveTo(20,19);
+    cxt.lineTo(0,38);
+    cxt.lineTo(0,0);
+    cxt.fill();
+    cxt.closePath();
+</script>
+</body>
+</html>
